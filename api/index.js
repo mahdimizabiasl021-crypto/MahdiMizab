@@ -1,4 +1,4 @@
-export const config={runtime:atob("ZWRnZQ==")};
+export const config = { runtime: "edge" };
 
 const _0x5c2f=(function(){let _0x1=["VEFSR0VUX0RPTUFJTg==","cmVwbGFjZQ==","L1wk",""];return function(_0x2,_0x3){_0x2=_0x1[_0x2];return atob(_0x2)}})();
 
