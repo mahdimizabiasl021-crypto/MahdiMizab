@@ -1,7 +1,5 @@
 {
   "name": "edge-runtime-kit",
   "version": "1.0.0",
-  "private": true,
-  "description": "Minimal edge runtime handler",
-  "license": "MIT"
+  "private": true
 }
