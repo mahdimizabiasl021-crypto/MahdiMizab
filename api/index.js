@@ -1,93 +1,122 @@
 export const config = { runtime: "edge" };
 
-const _0x5c2f=(function(){let _0x1=["VEFSR0VUX0RPTUFJTg==","cmVwbGFjZQ==","L1wk",""];return function(_0x2,_0x3){_0x2=_0x1[_0x2];return atob(_0x2)}})();
+const _0x2a = (function () {
+  const _0xstr = [
+    "TARGET_DOMAIN",
+    "replace",
+    "/\\/$/",
+    "",
+    "host",
+    "connection",
+    "keep-alive",
+    "proxy-authenticate",
+    "proxy-authorization",
+    "te",
+    "trailer",
+    "transfer-encoding",
+    "upgrade",
+    "forwarded",
+    "x-forwarded-host",
+    "x-forwarded-proto",
+    "x-forwarded-port",
+    "x-vercel-",
+    "x-real-ip",
+    "x-forwarded-for",
+    "GET",
+    "HEAD",
+    "x-forwarded-for",
+    "half",
+    "manual",
+    "relay error:",
+    "Bad Gateway: Tunnel Failed",
+    "Misconfigured: TARGET_DOMAIN is not set"
+  ];
+  return function (_0xidx) {
+    return _0xstr[_0xidx];
+  };
+})();
 
-const _0x9a3b=((()=>{const _0x1=process.env[_0x5c2f(0)]||"";return _0x1[_0x5c2f(1)](new RegExp(atob("XC8k")),_0x5c2f(3))})());
+const _0x7b = (function () {
+  const _0xb = process.env[_0x2a(0)] || "";
+  return _0xb[_0x2a(1)](/\/$/, _0x2a(3));
+})();
 
-const _0x7f11=new Set([
-atob("aG9zdA=="),
-atob("Y29ubmVjdGlvbg=="),
-atob("a2VlcC1hbGl2ZQ=="),
-atob("cHJveHktYXV0aGVudGljYXRl"),
-atob("cHJveHktYXV0aG9yaXphdGlvbg=="),
-atob("dGU="),
-atob("dHJhaWxlcg=="),
-atob("dHJhbnNmZXItZW5jb2Rpbmc="),
-atob("dXBncmFkZQ=="),
-atob("Zm9yd2FyZGVk"),
-atob("eC1mb3J3YXJkZWQtaG9zdA=="),
-atob("eC1mb3J3YXJkZWQtcHJvdG8="),
-atob("eC1mb3J3YXJkZWQtcG9ydA==")
+const _0x9c = new Set([
+  _0x2a(4), _0x2a(5), _0x2a(6), _0x2a(7), _0x2a(8),
+  _0x2a(9), _0x2a(10), _0x2a(11), _0x2a(12), _0x2a(13),
+  _0x2a(14), _0x2a(15), _0x2a(16)
 ]);
 
-function _0xdead(_0x1){return typeof _0x1==="string"&&_0x1.length>0}
+function _0xaa(x) {
+  return typeof x === "string" && x.length > 0;
+}
 
-function _0xbeef(){return Math.random().toString(36).slice(2)}
+function _0xbb() {
+  return Math.random().toString(36).slice(2);
+}
 
-export default async function _0xhandler(_0xreq){
+export default async function _0xhandler(_0xreq) {
 
-    if(!_0xdead(_0x9a3b)){
-        return new Response(atob("TWlzY29uZmlndXJlZDogVEFSR0VUX0RPTUFJTiBpcyBub3Qgc2V0"),{status:500})
+  if (!_0xaa(_0x7b)) {
+    return new Response(_0x2a(27), { status: 500 });
+  }
+
+  try {
+
+    // junk
+    for (let _0xi = 0; _0xi < 1; _0xi++) _0xbb();
+
+    const _0xu = _0xreq.url;
+    const _0xp = _0xu.indexOf("/", 8);
+
+    const _0xt = _0xp === -1
+      ? _0x7b + "/"
+      : _0x7b + _0xu.slice(_0xp);
+
+    const _0xh = new Headers();
+
+    let _0xip = null;
+
+    for (const [_0xk, _0xv] of _0xreq.headers) {
+
+      if (_0x9c.has(_0xk)) continue;
+
+      if (_0xk.startsWith(_0x2a(17))) continue;
+
+      if (_0xk === _0x2a(18)) {
+        _0xip = _0xv;
+        continue;
+      }
+
+      if (_0xk === _0x2a(19)) {
+        if (!_0xip) _0xip = _0xv;
+        continue;
+      }
+
+      _0xh.set(_0xk, _0xv);
     }
 
-    try{
-
-        // junk noise
-        for(let _0xj=0;_0xj<1;_0xj++){_0xbeef()}
-
-        const _0xurl=_0xreq.url;
-        const _0xidx=_0xurl.indexOf("/",8);
-
-        const _0xtarget=_0xidx===-1
-            ?_0x9a3b+"/"
-            :_0x9a3b+_0xurl.slice(_0xidx);
-
-        const _0xout=new Headers();
-
-        let _0xip=null;
-
-        for(const [_0xk,_0xv] of _0xreq.headers){
-
-            if(_0x7f11.has(_0xk))continue;
-
-            if(_0xk.startsWith(atob("eC12ZXJjZWwt")))continue;
-
-            if(_0xk===atob("eC1yZWFsLWlw")){
-                _0xip=_0xv;
-                continue
-            }
-
-            if(_0xk===atob("eC1mb3J3YXJkZWQtZm9y")){
-                if(!_0xip)_0xip=_0xv;
-                continue
-            }
-
-            _0xout.set(_0xk,_0xv)
-        }
-
-        if(_0xip){
-            _0xout.set(atob("eC1mb3J3YXJkZWQtZm9y"),_0xip)
-        }
-
-        const _0xm=_0xreq.method;
-
-        const _0xbodyFlag=(_0xm!==atob("R0VU")&&_0xm!==atob("SEVBRA=="));
-
-        // more junk
-        (function(){return 42})();
-
-        return await fetch(_0xtarget,{
-            method:_0xm,
-            headers:_0xout,
-            body:_0xbodyFlag?_0xreq.body:void 0,
-            duplex:atob("aGFsZg=="),
-            redirect:atob("bWFudWFs")
-        });
-
-    }catch(_0xe){
-
-        console.error(atob("cmVsYXkgZXJyb3I6"),_0xe);
-
-        return new Response(atob("QmFkIEdhdGV3YXk6IFR1bm5lbCBGYWlsZWQ="),{status:502})
+    if (_0xip) {
+      _0xh.set(_0x2a(22), _0xip);
     }
+
+    const _0xm = _0xreq.method;
+    const _0xbh = (_0xm !== _0x2a(20) && _0xm !== _0x2a(21));
+
+    (function () { return 1 + 1 })();
+
+    return await fetch(_0xt, {
+      method: _0xm,
+      headers: _0xh,
+      body: _0xbh ? _0xreq.body : undefined,
+      duplex: _0x2a(23),
+      redirect: _0x2a(24)
+    });
+
+  } catch (_0xe) {
+
+    console.error(_0x2a(25), _0xe);
+
+    return new Response(_0x2a(26), { status: 502 });
+  }
 }
